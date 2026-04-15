@@ -1,0 +1,16 @@
+services:
+  app1:
+    image: alpine:3.20
+    command: ["sh", "-c", "sleep infinity"]
+    networks:
+      - private_net
+
+  app2:
+    image: alpine:3.20
+    command: ["sh", "-c", "sleep infinity"]
+    networks:
+      - private_net
+
+networks:
+  private_net:
+    driver: bridge

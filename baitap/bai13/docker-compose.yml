@@ -1,0 +1,6 @@
+services:
+  react-app:
+    build: .
+    ports:
+      - "8085:80"
+    restart: unless-stopped
